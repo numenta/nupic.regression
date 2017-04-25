@@ -3,7 +3,7 @@ from collections import deque
 import unittest2 as unittest
 import automatatron
 
-from nupic.frameworks.opf.modelfactory import ModelFactory
+from nupic.frameworks.opf.model_factory import ModelFactory
 
 import rule_30_model_params
 
@@ -13,9 +13,9 @@ RULE_NUMBER = 30
 
 
 class Rule30AutomataPredictionTest(unittest.TestCase):
-  
-  
-  
+
+
+
   def test_rule30_prediction_is_perfect_after_600_iterations(self):
     """
     Generates Rule 30 elementary cellular automaton and passes it through NuPIC.
@@ -33,24 +33,24 @@ class Rule30AutomataPredictionTest(unittest.TestCase):
       input_row = {}
       for index, field in enumerate(row):
         input_row["bit_%i" % index] = str(field)
-      
+
       prediction = last_prediction[0]
       predicted_index = int(PREDICTED_FIELD.split("_").pop())
       value = str(row[predicted_index])
       correct = (value == prediction)
       count = counter[0]
-      
-      if correct: 
+
+      if correct:
         prediction_history.append(1.0)
-      else: 
+      else:
         prediction_history.append(0.0)
-      
+
       correctness = reduce(lambda x, y: x + y,
                            prediction_history) / len(prediction_history)
 
       if count == iterations:
         unittest.TestCase.assertEqual(
-          self, 1.0, correctness, 
+          self, 1.0, correctness,
           "Predictions should be 100 percent correct after reaching %i "
           "iterations." % iterations
         )

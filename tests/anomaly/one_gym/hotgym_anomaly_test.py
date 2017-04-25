@@ -1,7 +1,7 @@
 import datetime
 import unittest2 as unittest
 import csv
-from nupic.frameworks.opf.modelfactory import ModelFactory
+from nupic.frameworks.opf.model_factory import ModelFactory
 import rec_center_hourly_model_params
 
 
