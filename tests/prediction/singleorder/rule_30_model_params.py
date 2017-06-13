@@ -13,7 +13,7 @@ MODEL_PARAMS = \
   'modelParams': { 'anomalyParams': { u'anomalyCacheRecords': None,
                                       u'autoDetectThreshold': None,
                                       u'autoDetectWaitRecords': None},
-                   'clParams': { 'alpha': 0.014085570221302232,
+                   'clParams': { 'alpha': 0.05,
                                  'verbosity': 0,
                                  'regionName': 'SDRClassifierRegion',
                                  'steps': '1'},
