@@ -15,7 +15,7 @@ MODEL_PARAMS = \
                                       u'autoDetectWaitRecords': None},
                    'clParams': { 'alpha': 0.014085570221302232,
                                  'verbosity': 0,
-                                 'regionName': 'CLAClassifierRegion',
+                                 'regionName': 'SDRClassifierRegion',
                                  'steps': '1'},
                    'inferenceType': 'TemporalMultiStep',
                    'sensorParams': { 'encoders': { '_classifierInput': { 'classifierOnly': True,
