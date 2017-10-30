@@ -27,9 +27,6 @@
 set -o errexit
 set -o xtrace
 
-# Additional python requirements
-pip install automatatron matplotlib pandas --no-deps
-
 # Install git, which may be necessary
 apt-get install -y git-core
 
