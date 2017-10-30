@@ -1,2 +1,3 @@
-requests
-automatatron
+matplotlib==2.1.0
+automatatron==1.1.0
+
